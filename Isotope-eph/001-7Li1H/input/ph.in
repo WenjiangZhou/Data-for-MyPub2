@@ -1,0 +1,15 @@
+ phonons of LiH
+  &inputph
+   tr2_ph=1.0d-16,
+   recover=.true.,
+   prefix='LiH'
+   outdir='output'
+   fildyn ='output/LiH.dyn_q'
+   fildvscf='dvscf_q'
+   reduce_io=.true.
+   ldisp=.true.,
+   epsil=.true.,
+   nq1=8, nq2=8, nq3=8
+   amass(1)=6.941,
+   amass(2)=1.0079,
+  /
