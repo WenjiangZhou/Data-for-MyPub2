@@ -3,6 +3,8 @@ neuroevolution potentials: Case studies on thermal properties of materials.
 
 Contents of repository
 
+DFT: INCAR, KPOINTS, and POTCAR for LiH.
+
 Lattice_constants: Classical and PIMD simulations for LiH 
 
 Train: Input for NEP train of LiH
