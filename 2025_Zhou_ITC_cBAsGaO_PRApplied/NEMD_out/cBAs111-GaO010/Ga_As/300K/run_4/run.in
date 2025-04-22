@@ -1,0 +1,24 @@
+potential    nep.txt
+#dftd3 pbe 12 6
+velocity     300
+
+minimize sd 1.0e-6 10000
+
+ensemble    npt_ber 300 300 100 0 0 0 54 54 54 2000
+fix          0
+time_step    1
+dump_thermo  1000
+dump_position 4000
+run        1000000
+
+ensemble     nvt_ber 300 300 100
+fix          0
+dump_thermo  1000
+run        1000000
+
+ensemble     heat_lan 300 100 20 1 27
+fix          0
+compute      0 10 100 temperature
+compute_shc  2 250 2 1000 400.0 group 0 14
+run          5000000
+

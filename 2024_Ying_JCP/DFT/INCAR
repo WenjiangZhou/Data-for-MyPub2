@@ -1,0 +1,33 @@
+
+ SYSTEM =  INCAR-scf
+# basic
+   PREC   = Accurate
+   ENCUT  = 600 eV
+   NELMIN = 5
+   LREAL  = A
+#   ALGO   = Fast
+   EDIFF  = 1E-8
+   EDIFFG = -0.001
+   ISMEAR = 0
+   SIGMA  = 0.03
+#   NPAR   = 5     ## Important to reduce calculate time, equal sqrt(cpu cores)
+   NCORE  = 4 # NCORE= 4 - approx SQRT( number of cores)
+#vdw
+#   GGA = MK
+#   PARAM1 = 0.1234
+#   PARAM2 = 1.0000
+#   LUSE_VDW = .TRUE.
+#   AGGAC = 0.0000
+
+# Molecular Dynamics
+   NSW    = 0
+   IBRION = 2
+   ISIF   = 3
+   LCHARG = .FALSE.
+   LWAVE  = .FALSE.
+
+   ISYM = 0
+
+   LSCALAPACK = .FALSE.
+
+

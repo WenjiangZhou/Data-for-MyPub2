@@ -1,5 +1,0 @@
-&INPUT
- fildyn = 'output_ph/LiH.dyn_q'
- zasr = 'simple'
- flfrc = 'LiH.ifc'
-/

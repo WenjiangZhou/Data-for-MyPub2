@@ -1,4 +1,11 @@
 Supporting information for: Wenjiang Zhou, Nianjie Liang, Wei Xiao, Zhaofei Tong, Fei Tian, and Bai Song, Ultrahigh interfacial thermal conductance for cooling gallium oxide electronics using cubic boron arsenide.
 
+Fig1: phonon dos of BAs, diamond, and Ga2O3
+Fig3: Temperature distribution of simulated interface and the position-dependent DOS
+Fig4: Interfacial states analysis
+FigR1_cBAs_GaO_heatflux: heat flux calculation from all the atoms and that from thermosates (Response to the referees)
+NEMD_out: All the NEMD simulation output to calculation the ITC
+Train_dataset: Training dataset for the MLPs
+
 Contents of repository
 
