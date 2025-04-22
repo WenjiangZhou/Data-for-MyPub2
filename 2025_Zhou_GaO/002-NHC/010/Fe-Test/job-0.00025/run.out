@@ -1,0 +1,186 @@
+
+***************************************************************
+*                 Welcome to use GPUMD                        *
+*     (Graphics Processing Units Molecular Dynamics)          *
+*               Master version after 3.9.5                    *
+*              This is the gpumd executable                   *
+***************************************************************
+
+
+---------------------------------------------------------------
+Compiling options:
+---------------------------------------------------------------
+
+DEBUG is off: Use different PRNG seeds for different runs.
+
+---------------------------------------------------------------
+GPU information:
+---------------------------------------------------------------
+
+number of GPUs = 1
+Device id:                   0
+    Device name:             NVIDIA GeForce RTX 4090 D
+    Compute capability:      8.9
+    Amount of global memory: 23.6429 GB
+    Number of SMs:           114
+
+---------------------------------------------------------------
+Started running GPUMD.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Started initializing positions and related parameters.
+---------------------------------------------------------------
+
+Number of atoms is 10240.
+Use periodic boundary conditions along x.
+Use periodic boundary conditions along y.
+Use periodic boundary conditions along z.
+Use triclinic box.
+Box matrix h = [a, b, c] is
+    4.9809783936e+01    0.0000000000e+00   -1.1120506178e+01
+    0.0000000000e+00    4.9327487946e+01    0.0000000000e+00
+    0.0000000000e+00    0.0000000000e+00    4.5674958525e+01
+Inverse box matrix g = inv(h) is
+    2.0076376988e-02   -0.0000000000e+00    4.8880060661e-03
+    0.0000000000e+00    2.0272672330e-02   -0.0000000000e+00
+    0.0000000000e+00    0.0000000000e+00    2.1893834878e-02
+Do not specify initial velocities here.
+Have no grouping method.
+There are 2 atom types.
+    4096 atoms of type 0.
+    6144 atoms of type 1.
+Initialized velocities with default T = 300 K.
+
+---------------------------------------------------------------
+Finished initializing positions and related parameters.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Started executing the commands in run.in.
+---------------------------------------------------------------
+
+Use the NEP4 potential with 2 atom types.
+    type 0 (Ga with Z = 31).
+    type 1 (O with Z = 8).
+    radial cutoff = 8 A.
+    angular cutoff = 4 A.
+    MN_radial = 221.
+    enlarged MN_radial = 277.
+    enlarged MN_angular = 37.
+    n_max_radial = 8.
+    n_max_angular = 8.
+    basis_size_radial = 12.
+    basis_size_angular = 8.
+    l_max_3body = 4.
+    l_max_4body = 2.
+    l_max_5body = 0.
+    ANN = 54-50-1.
+    number of neural network parameters = 5601.
+    number of descriptor parameters = 792.
+    total number of parameters = 6393.
+Initialized velocities with input T = 300 K.
+Use NPT ensemble for this run.
+    choose the Berendsen method.
+    initial temperature is 300 K.
+    final temperature is 300 K.
+    tau_T is 100 time_step
+    pressure_xx is 0 GPa.
+    pressure_yy is 0 GPa.
+    pressure_zz is 0 GPa.
+    pressure_yz is 0 GPa.
+    pressure_xz is 0 GPa.
+    pressure_xy is 0 GPa.
+    modulus_xx is 54 GPa.
+    modulus_yy is 54 GPa.
+    modulus_zz is 54 GPa.
+    modulus_yz is 54 GPa.
+    modulus_xz is 54 GPa.
+    modulus_xy is 54 GPa.
+    tau_p is 2000 time_step.
+Time step for this run is 1 fs.
+Dump thermo every 1000 steps.
+Run 500000 steps.
+    50000 steps completed.
+    100000 steps completed.
+    150000 steps completed.
+    200000 steps completed.
+    250000 steps completed.
+    300000 steps completed.
+    350000 steps completed.
+    400000 steps completed.
+    450000 steps completed.
+    500000 steps completed.
+
+---------------------------------------------------------------
+Time used for this run = 1858.39 second.
+Speed of this run = 2.75507e+06 atom*step/second.
+---------------------------------------------------------------
+
+Use NVT ensemble for this run.
+    choose the Nose-Hoover chain method.
+    initial temperature is 300 K.
+    final temperature is 300 K.
+    tau_T is 100 time_step.
+Dump thermo every 1000 steps.
+Run 500000 steps.
+    50000 steps completed.
+    100000 steps completed.
+    150000 steps completed.
+    200000 steps completed.
+    250000 steps completed.
+    300000 steps completed.
+    350000 steps completed.
+    400000 steps completed.
+    450000 steps completed.
+    500000 steps completed.
+
+---------------------------------------------------------------
+Time used for this run = 1874.79 second.
+Speed of this run = 2.73097e+06 atom*step/second.
+---------------------------------------------------------------
+
+Use NVT ensemble for this run.
+    choose the Nose-Hoover chain method.
+    initial temperature is 300 K.
+    final temperature is 300 K.
+    tau_T is 100 time_step.
+Compute thermal conductivity using the HNEMD method.
+    output_interval = 1000
+    fe_x = 0 /A
+    fe_y = 0.00025 /A
+    fe_z = 0 /A
+Run 10000000 steps.
+    1000000 steps completed.
+    2000000 steps completed.
+    3000000 steps completed.
+    4000000 steps completed.
+    5000000 steps completed.
+    6000000 steps completed.
+    7000000 steps completed.
+    8000000 steps completed.
+    9000000 steps completed.
+    10000000 steps completed.
+
+---------------------------------------------------------------
+Time used for this run = 37829.6 second.
+Speed of this run = 2.70688e+06 atom*step/second.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Finished executing the commands in run.in.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Time used = 41562.789970 s.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Finished running GPUMD.
+---------------------------------------------------------------
+

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH -o job.%j.out
+#SBATCH --job-name=GaO
+#SBATCH -p main
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=2
+#SBATCH --gres=gpu:1                # 请求 1 个 GPU
+
+module load oneapi/2023.0.0
+export I_MPI_FABRICS=shm:ofi
+module load GPUMD/202412
+ulimit -s unlimited
+
+
+#CUDA_VISIBLE_DEVICES=2 gpumd < run.in > run.out
+
+gpumd < run.in > run.out
+

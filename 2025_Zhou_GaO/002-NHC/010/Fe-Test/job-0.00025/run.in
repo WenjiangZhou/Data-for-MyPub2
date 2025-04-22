@@ -1,0 +1,19 @@
+potential    ../nep.txt
+velocity     300
+
+ensemble    npt_ber 300 300 100  0 0 0 0 0 0 54 54 54 54 54 54 2000
+time_step    1
+dump_thermo 1000
+run         500000
+
+ensemble     nvt_nhc 300 300 100
+dump_thermo  1000
+run          500000
+
+ensemble     nvt_nhc 300 300 100
+compute_hnemd 1000 0 0.00025 0
+# compute_shc   2 250 2 1000 200.0
+# sampling interval is 2, maximum number of correlation steps is 250
+# transport direction is z,consider 1000 frequency points and maximum angular frequency is 200 THz
+run           10000000
+
