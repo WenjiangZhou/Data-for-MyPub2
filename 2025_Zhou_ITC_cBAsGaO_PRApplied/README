@@ -7,5 +7,4 @@ FigR1_cBAs_GaO_heatflux: heat flux calculation from all the atoms and that from 
 NEMD_out: All the NEMD simulation output to calculation the ITC
 Train_dataset: Training dataset for the MLPs
 
-Contents of repository
 
