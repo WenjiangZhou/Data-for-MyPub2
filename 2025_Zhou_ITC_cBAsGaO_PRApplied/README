@@ -4,7 +4,7 @@ Fig1: phonon dos of BAs, diamond, and Ga2O3
 Fig3: Temperature distribution of simulated interface and the position-dependent DOS
 Fig4: Interfacial states analysis
 FigR1_cBAs_GaO_heatflux: heat flux calculation from all the atoms and that from thermosates (Response to the referees)
-NEMD_out: All the NEMD simulation output to calculation the ITC
+NEMD_out: All the NEMD simulation output for the calculation of ITC
 Train_dataset: Training dataset for the MLPs
 
 
